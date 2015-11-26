@@ -1,0 +1,4 @@
+require 'sinatra'
+require 'sinatra/reloader'
+require_relative('./models/blog.rb')
+require_realtive('./models/post.rb')

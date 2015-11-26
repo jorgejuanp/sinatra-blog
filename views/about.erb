@@ -1,0 +1,19 @@
+<!--
+jorge juan perales | nov 2015 | Sinatra Blog | homepage.erb
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sinatra Blog | About</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <h1><%= @blog_archive[0].title %></h1>
+
+  <% @users.each do |user| %>
+    <p><%= user %></p>
+  <% end %>
+
+</body>
+</html>

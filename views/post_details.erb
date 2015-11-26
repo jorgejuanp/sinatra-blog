@@ -1,0 +1,29 @@
+<!--
+jorge juan perales | nov 2015 | Sinatra Blog | homepage.erb
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sinatra Blog | <%= @post.title %></title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- fonts --> <link href='https://fonts.googleapis.com/css?family=Bitter:400,700|Vollkorn:400,700|Satisfy|Volkhov:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <h1 class="blog-title">Sinatra Blog</h1>
+          <article class="post">
+            <h2 class="post-title"><%= @post.title %></h2>
+            <p class="post-date">Published: <%= @post.date %></p>
+            <p class="post-parragraph"><%= @post.fulltext %></p>
+          </article>
+      </div><!-- end of col-8 -->
+    <div class="col-md-2"></div>
+  </div><!-- end of container-fluid -->
+
+</body>
+</html>
