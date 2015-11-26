@@ -17,25 +17,29 @@ jorge juan p. | nov 2015 | Sinatra Blog | homepage.erb
         <div class="col-md-8">
           <h1 class="blog-title pull-left">Sinatra Blog</h1>
           <a class="btn btn-primary pull-right" href="/new_post" role="button">
-            <!-- <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> -->
+            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
             Create new post
           </a>
         </div>
       <div class="col-md-2"></div>
-    </div>
+    </div><!-- /header -->
     <!-- content -->
     <div class="row content">
-      <div class="col-md-2"></div>
-        <div class="col-md-8">
+      <div class="col-md-3"></div>
+        <div class="col-md-6">
           <% @posts.each do |post| %>
             <article class="post">
               <h2 class="post-title-thumb"><a href="/post_details/<%= @posts.find_index(post) %>"><%= post.title %></a></h2>
-              <p class="post-date">Published: <%= post.date %></p>
-              <p class="post-parragraph"><%= post.text %></p>
+              <ul class="post-metadata">
+                <li class="pull-left">Published <%= post.date %>,</li>
+                <li class="pull-left">by <%= post.author %></li>
+                <li class="pull-left">in <%= post.category %></li>
+              </ul>
+              <p class="post-excerpt"><%= post.excerpt %></p>
             </article>
           <% end %>
         </div><!-- /col-8 -->
-      <div class="col-md-2"></div>
+      <div class="col-md-3"></div>
     </div>
   </div><!-- /container-fluid -->
 
