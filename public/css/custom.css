@@ -1,11 +1,15 @@
+.header {
+  background-color: rgb(80, 209, 217);
+}
+
 .post {
-  background-color: #ECECEC;
+  /*background-color: #ECECEC;*/
   border-radius: 5px;
   padding: 15px 30px;
   margin: 20px 0;
 }
 
-.blog-title, .post-title, .post-date {
+.blog-title, .post-title, .post-title-thumb, .post-date {
   font-family: 'Bitter', serif;
 }
 
@@ -15,9 +19,21 @@
   color: #333;
 }
 
-.post-title {
+.post-title-thumb {
   font-weight: 400;
   font-size: 1.5em;
+  color: #333;
+}
+
+.post-date-thumb {
+  font-weight: 400;
+  font-size: .85em;
+  color: #bfbfbf;
+}
+
+.post-title {
+  font-weight: 400;
+  font-size: 2em;
   color: #333;
 }
 
@@ -25,4 +41,12 @@
   font-weight: 400;
   font-size: .85em;
   color: #bfbfbf;
+}
+
+.body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.2em;
+  color: #2d2d2d;
 }
