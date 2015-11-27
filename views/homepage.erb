@@ -32,8 +32,8 @@ jorge juan p. | nov 2015 | Sinatra Blog | homepage.erb
               <h2 class="post-title-thumb"><a href="/post_details/<%= @posts.find_index(post) %>"><%= post.title %></a></h2>
               <ul class="post-metadata">
                 <li class="pull-left">Published <%= post.date %>,</li>
-                <li class="pull-left">by <%= post.author %></li>
-                <li class="pull-left">in <%= post.category %></li>
+                <li class="pull-left">by <a href="#"><%= post.author %></a></li>
+                <li class="pull-left">in <a href="#"><%= post.category %></a></li>
               </ul>
               <p class="post-excerpt"><%= post.excerpt %></p>
             </article>

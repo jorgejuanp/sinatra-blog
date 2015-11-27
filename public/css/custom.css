@@ -47,15 +47,14 @@
   font-weight: 400;
   font-size: 1em;
   color: #bfbfbf;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .post-metadata li a {
   list-style: none;
   font-weight: 400;
   font-size: 1em;
-  color: #bfbfbf;
-  margin-right: 10px;
+  color: rgb(46, 255, 170);
 }
 
 .post-title-thumb a {
